@@ -7,3 +7,15 @@
 Нумерация должна начинаться с  `1`. К примеру для первого элемента массива  `['Mango', 'Poly', 'Ajax']`  с индексом  `0`  будет выведено  `'1 - Mango'`, а для индекса  `2`  выведет  `'3 - Ajax'`.
 
 Используйте вспомогательную переменную  `result`  для добавления (конкатенации) строк внутри цикла  `for`
+
+    const getItemsString = function(array) {
+      'use strict';
+      // Write code under this line
+          let result = '';
+    
+        for (let i = 0; i < array.length; i += 1) {
+          result += `${i + 1} - ${array[i]}\n`;
+        }
+        return result; 
+    };
+
