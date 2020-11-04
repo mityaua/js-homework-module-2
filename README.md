@@ -24,33 +24,6 @@
 
 Напиши функцию  `findLongestWord(string = "")`, которая принимает параметром произвольную строку (в строке будут только слова и пробелы) и возвращает самое длинное слово в этой строке.
 
-```javascript
-function findLongestWord(string = '') {
-  // Write code under this line
-  const stringSplit = string.split(' ');
-  let longestWord = '';
-
-  for (let word of stringSplit) {
-    if (word.length > longestWord.length) {
-      longestWord = word;
-    }
-  }
-
-  return longestWord;
-}
-
-console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
-// 'jumped'
-
-console.log(findLongestWord('Google do a roll'));
-// 'Google'
-
-console.log(findLongestWord('May the force be with you'));
-// 'force'
-
-```
-
-
 
 ## Задача 2-4
 
@@ -61,25 +34,6 @@ console.log(findLongestWord('May the force be with you'));
 -   Если длина строки не превышает  `maxLength`, функция возвращает ее в исходном виде.
 -   Если длина больше  `maxLength`, то функция обрезает строку до размера  `maxLength`  символов и добавляет в конец строки троеточие  `...`, после чего возвращает укороченную версию.
 
-```javascript
-function formatString (string, maxLength = 40) {
-  // Write code under this line
-  if (string.length <= maxLength) {
-    return string;
-  } else {
-    return string.slice(0, maxLength) + '...';
-  }
-}
-
-//console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-// 'Curabitur ligula sapien, tincidunt non.'
-
-//console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-// 'Vestibulum facilisis, purus nec pulvinar...'
-
-//console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.', 30));
-// 'Vestibulum facilisis, purus ne...'
-```
 
 ## Задача 2-5
 
@@ -88,20 +42,3 @@ function formatString (string, maxLength = 40) {
 Функция предикат возвращает true или false
 
 Напиши функцию  `checkForSpam(message)`, принимающую 1 параметр  `message`  - строку. Функция проверяет ее на содержание слов  `spam`  и  `sale`. Если нашли запрещенное слово то функция возвращает  `true`, если запрещенных слов нет функция возвращает  `false`. Слова в строке могут быть в произвольном регистре.
-
-```javascript
-function checkForSpam (str) { 
-  'use strict';
-  // Write code under this line
-    let checkSpam = str.toLowerCase();
-  return checkSpam.includes('spam') || checkSpam.includes('sale');
-}
-
-//console.log(checkForSpam('Latest technology news')); // false
-
-//console.log(checkForSpam('JavaScript weekly newsletter')); // false
-
-//console.log(checkForSpam('Get best sale offers now!')); // true
-
-//console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
-```
