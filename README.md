@@ -8,7 +8,8 @@
 
 Используйте вспомогательную переменную  `result`  для добавления (конкатенации) строк внутри цикла  `for`
 
-    const getItemsString = function(array) {
+```javascript
+const getItemsString = function(array) {
       'use strict';
       // Write code under this line
           let result = '';
@@ -18,6 +19,8 @@
         }
         return result; 
     };
+```
+
 
 ## Задача 2-2
 
