@@ -8,19 +8,6 @@
 
 Используйте вспомогательную переменную  `result`  для добавления (конкатенации) строк внутри цикла  `for`
 
-```javascript
-const getItemsString = function(array) {
-      'use strict';
-      // Write code under this line
-          let result = '';
-    
-        for (let i = 0; i < array.length; i += 1) {
-          result += `${i + 1} - ${array[i]}\n`;
-        }
-        return result; 
-    };
-```
-
 
 ## Задача 2-2
 
