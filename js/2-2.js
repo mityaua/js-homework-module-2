@@ -1,3 +1,7 @@
+// 1. Переводим строку в массив через применение методоа split для параметра message
+// 2. Добавляем подсчет длинны массива через метод length
+// 3. Умножаем длинну массива на значение параметра pricePerWord
+
 const calculateEngravingPrice = (message = "", pricePerWord = 0) =>
     
     message.split(" ").length * pricePerWord; // Write code in this line
