@@ -1,8 +1,8 @@
 function checkForSpam(str) {
   "use strict";
   // Write code under this line
-  let checkSpam = str.toLowerCase();
-  return checkSpam.includes("spam") || checkSpam.includes("sale");
+  let stopWord = str.toLowerCase();
+  return stopWord.includes('spam') || stopWord.includes('sale');
 }
 
 console.log(checkForSpam('Latest technology news')); // false
